@@ -89,13 +89,6 @@ export default {
     })
   },
 
-  beforeDestroy() {
-    assert(
-      false,
-      '<modal-portal> should not be destroyed. If you are using v-if on <modal-portal>, use v-show instead.'
-    )
-  },
-
   render(h: Function) {
     const modal = this.modals[this.current]
 
